@@ -1,0 +1,26 @@
+CREATE TABLE orders (
+  id INT not NULL, 
+  orde_name INT, 
+  customer_id INT, 
+  product_id INT,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (customer_id) REFERENCES customer(id),
+  FOREIGN key (product_id)REFERENCES procducs(id)
+  )
+  
+  CREATE TABLE customers  (
+  id Int NOT NULL,
+  first_name text, 
+  last_name TEXT, 
+  address  TEXT,
+  PRIMARY KEY (id)
+ )
+ 
+ 
+ CREATE TABLE products (
+   id Int not NULL,
+   name STRING, 
+   price MONEY, stock Integer, xavier INt, 
+   PRIMARY KEY (ID)
+   
+)
